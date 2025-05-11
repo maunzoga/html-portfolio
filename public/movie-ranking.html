@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #d1d1d1;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        color: #292828;
+        line-height: 1.5;
+    }
+
+    .container {
+        justify-self: center;
+        width: 60%;
+        height: 100px;
+        text-align: left;
+        padding: 80px;
+        border-radius: 10px;
+        background-color: rgb(187, 206, 206);
+        box-shadow: #29282830 0px 0px 20px;
+        overflow: visible;
+    }
+    .container::-webkit-scrollbar {
+        width: 10px;
+    }
+    .container::-webkit-scrollbar-thumb {
+        background-color: #292828;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 4em;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    h3 {
+        font-size: 1.5em;
+        text-align: left;
+        text-decoration: underline #ffffff solid 2px  ;
+        text-underline-offset: 10px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: auto
+    }
+    .card {
+        flex-direction: column;
+        background-color: #292828;
+        color: #ffffff;
+        height: 50px;
+        width: 30%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: #29282830 0px 0px 20px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .card img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 0%;
+        transition: all 0.3s ease-in-out;
+        padding-bottom: 20px;
+    }
+
+
+    .card:hover {
+        flex-direction: column;
+        background-color: #363434;
+        color: #ffffff;
+        height: 630px;
+        width: 30%;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+</style>
+
+<body>
+    <h1>The Best Movies </h1>
+    <div class="container">
+        <h2>Top 3 movies of all-time.</h2>
+        <div class="cards">
+            <div class="card">     
+                <h3>Nausicaä</h3>
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Nausicaaposter.jpg/250px-Nausicaaposter.jpg" alt="Nausicaä" />
+                </div>
+                <p>A devastating war, which only a few civilizations have survived, has turned the earth into a desolate wasteland on which a fungus forest is spreading, the spores of which are highly toxic to humans.
+                    </p>
+            </div>
+            <div class="card">
+                <h3>Fight Club</h3>
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Fight_Club_poster.jpg/250px-Fight_Club_poster.jpg" alt="Fight Club" />
+                </div>
+                <p>An office worker suffering from insomnia looks for a way to turn his life around and meets a carefree soap merchant who runs an underground fight club that turns out to be something even bigger.</p>
+            </div>
+            <div class="card">
+                <h3>Old Boy</h3>
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Oldboykoreanposter.jpg/250px-Oldboykoreanposter.jpg" alt="Oldboy" />
+                </div>
+                <p>After being kidnapped and imprisoned for 15 years, Oh Dae-su is suddenly released, only to be told that he must find his kidnapper in 5 days.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
